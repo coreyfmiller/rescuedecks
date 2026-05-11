@@ -3,49 +3,40 @@
 import { useState } from "react"
 import Image from "next/image"
 import { X, ChevronLeft, ChevronRight } from "lucide-react"
-import { Button } from "@/components/ui/button"
 
 const galleryImages = [
-  {
-    src: "https://images.unsplash.com/photo-1591825729269-caeb344f6df2?w=800&h=600&fit=crop",
-    alt: "Beautiful wooden deck with outdoor furniture",
-    caption: "Pressure Treated Deck"
-  },
-  {
-    src: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&h=600&fit=crop",
-    alt: "Cedar deck with stunning natural finish",
-    caption: "Cedar Deck"
-  },
-  {
-    src: "https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?w=800&h=600&fit=crop",
-    alt: "Pool deck with lounge chairs",
-    caption: "Pool Deck"
-  },
-  {
-    src: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&h=600&fit=crop",
-    alt: "Modern composite deck with railing",
-    caption: "Composite Deck"
-  },
-  {
-    src: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=600&fit=crop",
-    alt: "Pergola with outdoor living space",
-    caption: "Pergola Installation"
-  },
-  {
-    src: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&h=600&fit=crop",
-    alt: "Backyard deck with landscaping",
-    caption: "Multi-level Deck"
-  },
-  {
-    src: "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=800&h=600&fit=crop",
-    alt: "Deck with outdoor kitchen",
-    caption: "Outdoor Living Space"
-  },
-  {
-    src: "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800&h=600&fit=crop",
-    alt: "Modern deck design with lighting",
-    caption: "Deck with Lighting"
-  }
+  { src: "/images/gallery/470826404_17888127966155973_5207287233049954386_n.jpg", alt: "Deck project" },
+  { src: "/images/gallery/470901490_17888127957155973_2711808205253870002_n.jpg", alt: "Deck project" },
+  { src: "/images/gallery/470920585_17888127996155973_2693795794726752247_n.jpg", alt: "Deck project" },
+  { src: "/images/gallery/481911357_122293468310003274_2066389610907384060_n.jpg", alt: "Deck project" },
+  { src: "/images/gallery/482087398_122293468178003274_2596086320421741325_n.jpg", alt: "Deck project" },
+  { src: "/images/gallery/482906846_17898034506155973_3159347960566449308_n.jpg", alt: "Deck project" },
+  { src: "/images/gallery/497748005_17906204892155973_5654799948561596421_n.jpg", alt: "Deck project" },
+  { src: "/images/gallery/502509318_17911029873155973_7113789303809839106_n.jpg", alt: "Deck project" },
+  { src: "/images/gallery/503625860_17911029891155973_3580781622986399164_n.jpg", alt: "Deck project" },
+  { src: "/images/gallery/522393122_17914046619155973_3572970213906098459_n.jpg", alt: "Deck project" },
+  { src: "/images/gallery/522413294_17914046628155973_2018325861752196660_n.jpg", alt: "Deck project" },
+  { src: "/images/gallery/522669163_17914156869155973_7381256027436311646_n.jpg", alt: "Deck project" },
+  { src: "/images/gallery/523015741_17914156860155973_8271681892946530168_n.jpg", alt: "Deck project" },
+  { src: "/images/gallery/531985480_17916873087155973_6238197226823628503_n.jpg", alt: "Deck project" },
+  { src: "/images/gallery/542226866_17919365757155973_1391020720094087525_n.jpg", alt: "Deck project" },
+  { src: "/images/gallery/542450192_17919365733155973_2451351092069212922_n.jpg", alt: "Deck project" },
+  { src: "/images/gallery/542562066_17919365769155973_1019592537924945532_n.jpg", alt: "Deck project" },
+  { src: "/images/gallery/559129508_122351760176003274_4310909031371942768_n.jpg", alt: "Deck project" },
+  { src: "/images/gallery/571202577_122357934320003274_2979626463855147762_n.jpg", alt: "Deck project" },
+  { src: "/images/gallery/571271026_122357934374003274_2616628707884102519_n.jpg", alt: "Deck project" },
+  { src: "/images/gallery/580487403_122363583770003274_2890992776107531480_n.jpg", alt: "Deck project" },
+  { src: "/images/gallery/581934479_122363583704003274_3363000428444905964_n.jpg", alt: "Deck project" },
+  { src: "/images/gallery/597818245_122370249452003274_8709232196729955469_n.jpg", alt: "Deck project" },
+  { src: "/images/gallery/599936839_122370249422003274_2511050315329519293_n.jpg", alt: "Deck project" },
+  { src: "/images/gallery/643730665_122388426086003274_3604827853855170767_n.jpg", alt: "Deck project" },
+  { src: "/images/gallery/645476955_122388426074003274_2278413411215235757_n.jpg", alt: "Deck project" },
+  { src: "/images/gallery/669619110_122399363528003274_6890957779155155139_n.jpg", alt: "Deck project" },
+  { src: "/images/gallery/669642598_122399363576003274_4004157394852097490_n.jpg", alt: "Deck project" },
+  { src: "/images/gallery/671232441_17946331503155973_4265488398485287871_n.jpg", alt: "Deck project" },
+  { src: "/images/gallery/671835218_17946331533155973_282923567755615363_n.jpg", alt: "Deck project" },
+  { src: "/images/gallery/683457497_17948019831155973_8748813101671875138_n.jpg", alt: "Deck project" },
+  { src: "/images/gallery/683492490_17948019786155973_536194177743007646_n.jpg", alt: "Deck project" },
 ]
 
 export function Gallery() {
@@ -81,7 +72,7 @@ export function Gallery() {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
           {galleryImages.map((image, index) => (
             <button
               key={index}
@@ -92,13 +83,9 @@ export function Gallery() {
                 src={image.src}
                 alt={image.alt}
                 fill
-                className="object-cover group-hover:scale-110 transition-transform duration-500"
+                className="object-cover group-hover:scale-105 transition-transform duration-500"
               />
-              <div className="absolute inset-0 bg-foreground/0 group-hover:bg-foreground/40 transition-colors flex items-end justify-center">
-                <span className="text-primary-foreground font-medium pb-4 opacity-0 group-hover:opacity-100 transition-opacity">
-                  {image.caption}
-                </span>
-              </div>
+              <div className="absolute inset-0 bg-foreground/0 group-hover:bg-foreground/20 transition-colors" />
             </button>
           ))}
         </div>
@@ -106,40 +93,49 @@ export function Gallery() {
 
       {/* Lightbox */}
       {lightboxOpen && (
-        <div className="fixed inset-0 z-50 bg-foreground/95 flex items-center justify-center">
+        <div
+          className="fixed inset-0 z-50 bg-black/95 flex items-center justify-center"
+          onClick={closeLightbox}
+        >
           <button
             onClick={closeLightbox}
-            className="absolute top-4 right-4 text-primary-foreground hover:text-accent transition-colors"
+            className="absolute top-4 right-4 text-white hover:text-accent transition-colors z-10"
+            aria-label="Close lightbox"
           >
             <X className="h-8 w-8" />
           </button>
 
           <button
-            onClick={goToPrevious}
-            className="absolute left-4 text-primary-foreground hover:text-accent transition-colors"
+            onClick={(e) => { e.stopPropagation(); goToPrevious() }}
+            className="absolute left-4 text-white hover:text-accent transition-colors z-10"
+            aria-label="Previous image"
           >
             <ChevronLeft className="h-12 w-12" />
           </button>
 
-          <div className="max-w-4xl max-h-[80vh] relative">
+          <div
+            className="relative max-w-5xl max-h-[85vh] w-full h-full mx-16"
+            onClick={(e) => e.stopPropagation()}
+          >
             <Image
               src={galleryImages[currentIndex].src}
               alt={galleryImages[currentIndex].alt}
-              width={800}
-              height={600}
-              className="object-contain max-h-[80vh] w-auto"
+              fill
+              className="object-contain"
             />
-            <p className="text-center text-primary-foreground mt-4 text-lg">
-              {galleryImages[currentIndex].caption}
-            </p>
           </div>
 
           <button
-            onClick={goToNext}
-            className="absolute right-4 text-primary-foreground hover:text-accent transition-colors"
+            onClick={(e) => { e.stopPropagation(); goToNext() }}
+            className="absolute right-4 text-white hover:text-accent transition-colors z-10"
+            aria-label="Next image"
           >
             <ChevronRight className="h-12 w-12" />
           </button>
+
+          <div className="absolute bottom-4 text-white/70 text-sm">
+            {currentIndex + 1} / {galleryImages.length}
+          </div>
         </div>
       )}
     </section>
