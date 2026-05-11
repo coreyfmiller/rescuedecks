@@ -19,14 +19,14 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 bg-card/95 backdrop-blur-sm border-b border-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-36">
           <Link href="/" className="flex-shrink-0">
             <Image
               src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-d0YkJEvwB6bZRe75M4QIY3HeJaXIos.png"
               alt="Rescue Decks Logo"
-              width={140}
-              height={80}
-              className="h-16 w-auto"
+              width={420}
+              height={240}
+              className="h-28 w-auto"
               priority
             />
           </Link>
@@ -37,7 +37,7 @@ export function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-foreground/80 hover:text-primary font-medium transition-colors"
+                className="text-foreground/80 hover:text-primary font-medium transition-colors text-lg"
               >
                 {link.label}
               </Link>
@@ -45,8 +45,8 @@ export function Header() {
           </nav>
 
           <div className="hidden md:flex items-center gap-4">
-            <a href="mailto:info@rescuedecks.ca" className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors">
-              <Mail className="h-4 w-4" />
+            <a href="mailto:info@rescuedecks.ca" className="flex items-center gap-2 text-base text-muted-foreground hover:text-primary transition-colors">
+              <Mail className="h-5 w-5" />
               <span>info@rescuedecks.ca</span>
             </a>
             <Button asChild>

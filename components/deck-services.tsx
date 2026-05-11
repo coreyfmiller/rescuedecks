@@ -34,10 +34,10 @@ export function DeckServices() {
     <section id="services" className="py-20 bg-muted/50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="font-serif text-3xl sm:text-4xl font-bold text-foreground mb-4">
+          <h2 className="font-serif text-4xl sm:text-5xl font-bold text-foreground mb-4">
             Our Deck Building Services
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Choose from our selection of quality deck materials, each offering unique benefits for your outdoor space.
           </p>
         </div>
@@ -54,14 +54,14 @@ export function DeckServices() {
                 />
               </div>
               <CardHeader>
-                <CardTitle className="font-serif text-xl">{deck.title}</CardTitle>
-                <CardDescription className="text-base">{deck.description}</CardDescription>
+                <CardTitle className="font-serif text-2xl">{deck.title}</CardTitle>
+                <CardDescription className="text-lg">{deck.description}</CardDescription>
               </CardHeader>
               <CardContent>
                 <ul className="grid grid-cols-2 gap-2">
                   {deck.features.map((feature) => (
-                    <li key={feature} className="flex items-center gap-2 text-sm text-muted-foreground">
-                      <CheckCircle className="h-4 w-4 text-primary flex-shrink-0" />
+                    <li key={feature} className="flex items-center gap-2 text-base text-muted-foreground">
+                      <CheckCircle className="h-5 w-5 text-primary flex-shrink-0" />
                       <span>{feature}</span>
                     </li>
                   ))}

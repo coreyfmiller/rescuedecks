@@ -12,11 +12,11 @@ export function Footer() {
             <Image
               src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-d0YkJEvwB6bZRe75M4QIY3HeJaXIos.png"
               alt="Rescue Decks Logo"
-              width={160}
-              height={90}
-              className="h-20 w-auto mb-4 brightness-110"
+              width={320}
+              height={180}
+              className="h-24 w-auto mb-4 brightness-110"
             />
-            <p className="text-primary-foreground/80 max-w-sm">
+            <p className="text-base text-primary-foreground/80 max-w-sm">
               Building quality decks and outdoor living spaces in Kings County and Saint John County, New Brunswick.
             </p>
             <div className="flex gap-4 mt-6">
@@ -39,8 +39,8 @@ export function Footer() {
 
           {/* Services */}
           <div>
-            <h4 className="font-serif font-semibold text-lg mb-4">Deck Types</h4>
-            <ul className="space-y-2 text-primary-foreground/80">
+            <h4 className="font-serif font-semibold text-xl mb-4">Deck Types</h4>
+            <ul className="space-y-3 text-base text-primary-foreground/80">
               <li><Link href="#services" className="hover:text-primary-foreground transition-colors">Pressure Treated</Link></li>
               <li><Link href="#services" className="hover:text-primary-foreground transition-colors">Pool Decks</Link></li>
               <li><Link href="#services" className="hover:text-primary-foreground transition-colors">Cedar Decks</Link></li>
@@ -50,8 +50,8 @@ export function Footer() {
 
           {/* Other Services */}
           <div>
-            <h4 className="font-serif font-semibold text-lg mb-4">Other Services</h4>
-            <ul className="space-y-2 text-primary-foreground/80">
+            <h4 className="font-serif font-semibold text-xl mb-4">Other Services</h4>
+            <ul className="space-y-3 text-base text-primary-foreground/80">
               <li><Link href="#other-services" className="hover:text-primary-foreground transition-colors">Pergolas</Link></li>
               <li><Link href="#other-services" className="hover:text-primary-foreground transition-colors">Gazebos</Link></li>
               <li><Link href="#other-services" className="hover:text-primary-foreground transition-colors">Sheds</Link></li>

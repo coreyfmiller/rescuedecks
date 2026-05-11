@@ -22,15 +22,15 @@ export function Hero() {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="max-w-2xl">
           <div className="flex items-center gap-2 text-primary-foreground/90 mb-4">
-            <MapPin className="h-5 w-5" />
-            <span className="text-sm font-medium">Serving Kings County & Saint John County, NB</span>
+            <MapPin className="h-6 w-6" />
+            <span className="text-base font-medium">Serving Kings County & Saint John County, NB</span>
           </div>
           
-          <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight mb-6 text-balance">
+          <h1 className="font-serif text-5xl sm:text-6xl lg:text-7xl font-bold text-primary-foreground leading-tight mb-6 text-balance">
             Custom Decks & Outdoor Living Spaces
           </h1>
           
-          <p className="text-lg sm:text-xl text-primary-foreground/90 mb-8 leading-relaxed">
+          <p className="text-xl sm:text-2xl text-primary-foreground/90 mb-8 leading-relaxed">
             Transform your backyard into a stunning outdoor oasis. From pressure-treated and cedar decks to composite and pool decks, we build quality outdoor spaces that last.
           </p>
 
@@ -38,7 +38,7 @@ export function Hero() {
             <Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90" asChild>
               <Link href="#contact">Get a Free Quote</Link>
             </Button>
-            <Button size="lg" variant="outline" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground/10" asChild>
+            <Button size="lg" variant="outline" className="border-primary-foreground text-black bg-white hover:bg-white/90" asChild>
               <Link href="#gallery">View Our Work</Link>
             </Button>
           </div>
