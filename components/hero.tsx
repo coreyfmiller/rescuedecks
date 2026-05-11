@@ -20,7 +20,7 @@ export function Hero() {
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <div className="max-w-2xl">
+        <div className="max-w-4xl">
           <div className="flex items-center gap-2 text-primary-foreground/90 mb-4">
             <MapPin className="h-6 w-6" />
             <span className="text-base font-medium">Serving Kings County & Saint John County, NB</span>
